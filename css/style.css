@@ -19,9 +19,14 @@ body {
 }
 
 #gamedirections {
-  background-color: url(/imgs/white_tiles.png);
+  background-image: url(/imgs/white_tiles.png);
 }
+
 
 .btn {
   font-size: 30px;
+}
+
+#easy, #medium, #hard{
+  display: none;
 }
