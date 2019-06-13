@@ -35,5 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 });
 
-//Companions - Easy Who is Bad Wolf, What is the na
+//Companions - Easy Who is Bad Wolf, medium - What is the name of the doctor that fought the Daleks, 
+//Hard - what is the name of the TARDIS
+
+//Aliens - Easy - The doctor's constant nemis, Medium - What alien lived in Amy Ponds house, Who really  is the Face of Boe
+
+//Doctor - What is the Doctor's name when he pretends to be human medium - What planet is the Doctor from hard - Who is the Doctor's Daughter (just first name)
 
