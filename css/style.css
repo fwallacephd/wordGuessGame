@@ -1,0 +1,27 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+#header{
+  background-color: #040186;
+  border-bottom: 4px solid red; 
+}
+
+.title {
+  color: white; 
+  font-size: 45px; 
+}
+
+.directions {
+  font-size: 40px;
+  color: #040186;
+
+}
+
+#gamedirections {
+  background-color: url(/imgs/white_tiles.png);
+}
+
+.btn {
+  font-size: 30px;
+}
