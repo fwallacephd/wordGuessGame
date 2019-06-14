@@ -47,5 +47,10 @@ button {
 .easyCom, .mediumCom, .hardCom, .easyAlien, .mediumAlien, .hardAlien, .easyDoctor, .mediumDoctor, .hardDoctor{
   display: none;
   font-size: 25px;
+}
 
+.backBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
