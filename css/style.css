@@ -18,9 +18,9 @@ body {
 
 }
 
-#gamedirections {
-  background-image: url(/imgs/white_tiles.png);
-}
+#gamedirections, #companionQuiz  {
+  background-image: url("https://www.transparenttextures.com/patterns/perforated-white-leather.png");
+  }
 
 
 .btn {
@@ -38,4 +38,12 @@ button {
 
 .easy, .medium {
   font-size: 20px;
+}
+
+#companionQuiz {
+  font-size: 25px;
+}
+
+.easyCom, .mediumCom, .hardCom{
+  display: none;
 }
