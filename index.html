@@ -1,147 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Guess the Word</title>
 
-     <!-- Bootstrap, Fonts -->
+  <!-- Bootstrap, Fonts -->
 
-     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
-     
-     <!-- Latest compiled and minified CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
 
-     <!-- jQuery library -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-     <!-- Popper JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-     
-     <!--Icons-->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!--CSS-->
-    <link rel="stylesheet" href = "css/style.css"
-   
-</head>
-<body>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css" </head> <body>
   <!--Heading-->
   <section id="header">
     <div class="container-fluid">
-    <div class="row items-align-center"></div>
-    <div class="col-md-12 text-align-center"></div>
-    <img src= "imgs/DoctorWhoLogo.png" class="logo mx-auto d-block"></div>
+      <div class="row items-align-center"></div>
+      <div class="col-md-12 text-align-center"></div>
+      <img src="imgs/DoctorWhoLogo.png" class="logo mx-auto d-block">
+    </div>
     <p class="title text-center">Do you know WHO?</p>
   </section>
   <!--End of Heading-->
   <!--Game directons-->
   <section id="gamedirections" class="text-center">
-      <p class="directions text-center">Test your Time Lord knowledge with this 
-        word guessing game.<br>
-      Here are your categories.</p> 
-      <button type="button" id="companions" class="btn btn-danger">Companions</button>
-      <button type="button" id="aliens" class="btn btn-danger">Aliens</button>
-      <button type="button" id="doctor" class="btn btn-danger cats">The Doctor</button>
-      <!-- level -->
-      <button type="button" id="easy" class="btn btn-danger">Easy</button>
-      <button type="button" id="medium" class="btn btn-danger">Medium</button>
-      <button type="button" id="hard" class="btn btn-danger">Hard</button>
+    <p class="directions text-center">Test your Time Lord knowledge with this
+      word guessing game.<br>
+      Here are your categories.</p>
+    <button type="button" id="companions" class="btn btn-danger">Companions</button>
+    <button type="button" id="aliens" class="btn btn-danger">Aliens</button>
+    <button type="button" id="doctor" class="btn btn-danger cats">The Doctor</button>
+    <!-- level -->
+    <button type="button" id="easy" class="btn btn-danger">Easy</button>
+    <button type="button" id="medium" class="btn btn-danger">Medium</button>
+    <button type="button" id="hard" class="btn btn-danger">Hard</button>
   </section>
   <!--End of Game Directions-->
 
   <!--Compamion Words-->
-   <section id="companionQuiz text-center">
-      <row class="text-center easyCom" id="easyCheck">
-      <p>"Who is the Bad Wolf?"</p> 
-      <p>"Your word is: _ _ _ _ "</p>
-      <p> "You have 10 choices left"</p>
-      <p> "These are the letters you have used already:"</p>
+  <section id="companionQuiz text-center">
+    <row class="text-center easyCom" id="easyComCheck">
+      <p> Who is the Bad Wolf?</p>
+      <p> Your word is: _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already:</p>
       <p> WordCount = 0;</p>
-      <p>LoseCount = 0;</p> 
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
     </row>
-    <row class="mediumCom text-center" id="mediumCheck">  
-      <p>"What is the name of the TARDIS</p> 
-        <p>  "Your word is: _ _ _ _ _ "</p>
-        <p>   "You have 10 choices left"</p>
-        <p>  "These are the letters you have used already."</p>
-        <p> WordCount = 0;</p>
-        <p>LoseCount = 0;</p> 
+    <row class="mediumCom text-center" id="mediumComCheck">
+      <p>"What is the name of the TARDIS</p>
+      <p> Your word is: _ _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already.</p>
+      <p> WordCount = 0;</p>
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
     </row>
-    <row class="hardCom text-center" id="hardCheck">  
-        <p>"Who really is the Face of Boe</p> 
-          <p> "Your word is: _ _ _ _ _ _ _   _ _ _ _ "</p>
-          <p> "You have 10 choices left"</p>
-          <p> "These are the letters you have used already."</p>
-          <p> WordCount = 0;</p>
-          <p>LoseCount = 0;</p> 
-      </row>
-    </section>
-    <!--Companion Game over-->
-                
-    <!--Aliens-->
-    <section id="AliensQuiz text-center">
-        <row class="text-center easyAlien" id="easyAlienCheck">
-        <p>Who is The Doctor's nemis?</p> 
-        <p>Your word is: _  _ _ _ _ </p>
-        <p> You have 10 choices left</p>
-        <p> These are the letters you have used already.</p>
-        <p> WordCount = 0;</p>
-        <p>LoseCount = 0;</p> 
-      </row>
-      <row class="mediumAlien text-center" id="mediumAlienCheck">  
-        <p>What alien lived in Amy Ponds House?</p> 
-          <p>  Your word is: _ _ _ _ _ _ _ _ _ </p>
-          <p>  You have 10 choices left</p>
-          <p>  These are the letters you have used already.</p>
-          <p> WordCount = 0;</p>
-          <p>LoseCount = 0;</p> 
-      </row>
-      <row class="hardAlien text-center" id="hardAlienCheck">  
-          <p>"Who are the green, farty aliens? </p> 
-            <p> Your word is: _ _ _ _ _ _ _ _ </p>
-            <p> You have 10 choices left</p>
-            <p> These are the letters you have used already.</p>
-            <p> WordCount = 0;</p>
-            <p>LoseCount = 0;</p> 
-        </row>
-      </section>
-      <!-- End of Alien section-->
-      <!--The Doctor words-->
-      <section id="DoctorQuiz text-center">
-          <row class="text-center easyDoctor" id="easyDoctorCheck">
-          <p> What is The Doctor's name when he pretends to be human?</p> 
-          <p> Your word is: _ _ _ _ _ _ _ _ _  </p>
+    <row class="hardCom text-center" id="hardComCheck">
+      <p>"Who really is the Face of Boe</p>
+      <p> Your word is: _ _ _ _ _ _ _ _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already.</p>
+      <p> WordCount = 0;</p>
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
+    </row>
+  </section>
+  <!--Companion Game over-->
+
+  <!--Aliens-->
+  <section id="AliensQuiz text-center">
+    <row class="text-center easyAlien" id="easyAlienCheck">
+      <p>Who is The Doctor's nemis?</p>
+      <p>Your word is: _ _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already.</p>
+      <p> WordCount = 0;</p>
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
+    </row>
+    <row class="mediumAlien text-center" id="mediumAlienCheck">
+      <p>What alien lived in Amy Ponds House?</p>
+      <p> Your word is: _ _ _ _ _ _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already.</p>
+      <p> WordCount = 0;</p>
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
+    </row>
+    <row class="hardAlien text-center" id="hardAlienCheck">
+      <p>"Who are the green, farty aliens? </p>
+      <p> Your word is: _ _ _ _ _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already.</p>
+      <p> WordCount = 0;</p>
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
+    </row>
+  </section>
+  <!-- End of Alien section-->
+  <!--The Doctor words-->
+  <section id="DoctorQuiz text-center">
+    <row class="text-center easyDoctor" id="easyDoctorCheck">
+      <p> What is The Doctor's name when he pretends to be human?</p>
+      <p> Your word is: _ _ _ _ _ _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already.</p>
+      <p> WordCount = 0;</p>
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
+    </row>
+    <row class="mediumDoctor text-center" id="mediumDoctorCheck">
+      <p>What is the name of The Doctor's daughter?<p>
+          <p> Your word is: _ _ _ _ _ </p>
           <p> You have 10 choices left</p>
           <p> These are the letters you have used already.</p>
           <p> WordCount = 0;</p>
-          <p>LoseCount = 0;</p> 
-        </row>
-        <row class="mediumDoctor text-center" id="mediumDoctorCheck">  
-          <p>What is the name of The Doctor's daughter?<p> 
-            <p>  Your word is: _ _ _ _ _  </p>
-            <p>   You have 10 choices left</p>
-            <p>  These are the letters you have used already.</p>
-            <p> WordCount = 0;</p>
-            <p>LoseCount = 0;</p> 
-        </row>
-        <row class="hardDoctor text-center" id="hardDoctorCheck">  
-            <p>"What planet is the Doctor from? </p> 
-              <p> Your word is: _ _ _ _ _ _ _ </p>
-              <p> You have 10 choices left</p>
-              <p> These are the letters you have used already: </p>
-              <p> WordCount = 0;</p>
-              <p>LoseCount = 0;</p> 
-          </row>
-        </section>
-        <!--End of Doctor Section-->
-        </div>
-      </row>
+          <p>LoseCount = 0;</p>
+          <div class="backBtn">
+            <button id="back" class="btn btn-dark">Play Again</button>
+          </div>
+    </row>
+    <row class="hardDoctor text-center" id="hardDoctorCheck">
+      <p>"What planet is the Doctor from? </p>
+      <p> Your word is: _ _ _ _ _ _ _ </p>
+      <p> You have 10 choices left</p>
+      <p> These are the letters you have used already: </p>
+      <p> WordCount = 0;</p>
+      <p>LoseCount = 0;</p>
+      <div class="backBtn">
+        <button id="back" class="btn btn-dark">Play Again</button>
+      </div>
+    </row>
+  </section>
+  <!--End of Doctor Section-->
+  </div>
+  </row>
+  </section>
+  <!--End of Game-->
 
-    </section>
+  <footer></footer>
 
   <script src="./JavaScript/main.js"></script>
- 
-</body>
+
+  </body>
+
 </html>

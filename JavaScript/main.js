@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("medium").style.display = "none";
       document.getElementById("hard").style.display = "none";
 
-      const element = document.getElementById("easyCheck");
+      const element = document.getElementById("easyComCheck");
       if (element.classList.contains('easyCom')) {
         document.querySelector(".easyCom").style.display = "unset";
       }
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("medium").style.display = "none";
       document.getElementById("hard").style.display = "none";
 
-      const element = document.getElementById("mediumCheck");
+      const element = document.getElementById("mediumComCheck");
       if (element.classList.contains('mediumCom')) {
         document.querySelector(".mediumCom").style.display = "unset";
       }
@@ -36,10 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("medium").style.display = "none";
       document.getElementById("hard").style.display = "none";
 
-      const element = document.getElementById("hardCheck");
+      const element = document.getElementById("hardComCheck");
       if (element.classList.contains('hardCom')) {
         document.querySelector(".hardCom").style.display = "unset";
       }
+    })
+
+    //play again
+    document.getElementById("back").addEventListener("click", function(){
+      document.getElementById("companions").style.display = "unset";
+      document.getElementById("aliens").style.display = "unset";
+      document.gyetElementById("doctor").style.display = "unset";
+
+      document.getElementById("back").style.display = "none";
+      document.querySelector(".easCom").style.display = "none";
+      document.querySelector(".mediumCom").style.display = "none";
+      document.querySelector(".hardCom").style.display = "none";
     })
 
   })
@@ -88,20 +100,31 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".hardAlien").style.display = "unset";
       }
     })
+
+        //play again
+        document.getElementById("back").addEventListener("click", function(){
+          document.getElementById("companions").style.display = "unset";
+          document.getElementById("aliens").style.display = "unset";
+          document.getElementById("doctor").style.display = "unset";
+    
+          document.getElementById("back").style.display = "none";
+          document.querySelector(".easyAlien").style.display = "none";
+          document.querySelector(".mediumAlien").style.display = "none";
+          document.querySelector(".hardAlien").style.display = "none";
+        })
   })
   //alien end
 
 
 //doctor
-  document.getElementById("doctor").addEventListener("click", function () {
-    document.getElementById("companions").style.display = "none";
-    document.getElementById("aliens").style.display = "none";
-    document.getElementById("doctor").style.display = "none";
+document.getElementById("doctor").addEventListener("click", function () {
+  document.getElementById("companions").style.display = "none";
+  document.getElementById("aliens").style.display = "none";
+  document.getElementById("doctor").style.display = "none";
 
-    document.getElementById("easy").style.display = "unset";
-    document.getElementById("medium").style.display = "unset";
-    document.getElementById("hard").style.display = "unset";
-  })
+  document.getElementById("easy").style.display = "unset";
+  document.getElementById("medium").style.display = "unset";
+  document.getElementById("hard").style.display = "unset";
 
   document.getElementById("easy").addEventListener("click", function () {
     document.getElementById("easy").style.display = "none";
@@ -136,6 +159,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })
 
-});
-
+      //play again
+      document.getElementById("back").addEventListener("click", function(){
+        document.getElementById("companions").style.display = "unset";
+        document.getElementById("aliens").style.display = "unset";
+        document.getElementById("doctor").style.display = "unset";
+  
+        document.getElementById("back").style.display = "none";
+        document.querySelector(".easyDoctor").style.display = "none";
+        document.querySelector(".mediumDoctor").style.display = "none";
+        document.querySelector(".hardDoctor").style.display = "none";
+    })
+})
 //doctor end
+
+});
