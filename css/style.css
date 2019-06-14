@@ -18,9 +18,9 @@ body {
 
 }
 
-#gamedirections {
-  background-image: url(/imgs/white_tiles.png);
-}
+#gamedirections, #companionQuiz, #AliensQuiz, #DoctorQuiz  {
+  background-image: url("https://www.transparenttextures.com/patterns/perforated-white-leather.png");
+  }
 
 
 .btn {
@@ -29,4 +29,23 @@ body {
 
 #easy, #medium, #hard{
   display: none;
+  margin-top: 4px;
+}
+
+button {
+  margin: 3px;
+}
+
+.easy, .medium {
+  font-size: 40px;
+}
+
+#companionQuiz {
+  font-size: 35px;
+}
+
+.easyCom, .mediumCom, .hardCom, .easyAlien, .mediumAlien, .hardAlien, .easyDoctor, .mediumDoctor, .hardDoctor{
+  display: none;
+  font-size: 25px;
+
 }
