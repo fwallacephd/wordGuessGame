@@ -29,4 +29,13 @@ body {
 
 #easy, #medium, #hard{
   display: none;
+  margin-top: 4px;
+}
+
+button {
+  margin: 3px;
+}
+
+.easy, .medium {
+  font-size: 20px;
 }
